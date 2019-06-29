@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header bg-dark text-white d-flex justify-content-center">FREE delivery on orders over $100. Add promo code <span>&nbsp;FREEDEV&nbsp;</span> at checkout. Expires 12 March</div>
+<div class="show d-flex flex-column align-items-center">
+    <div class="nav_top d-flex justify-content-between pt-3">
+        <div >
+        <img class="w-100" src="imgs/logo.png" alt=""/>
+    </div>
+    <div class="input_container">
+        <input class="pl-1 border-0 show_input" type="text" placeholder="I am looking for...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|"/>
+    </div>    
+    <div  class="d-flex justify-content-between mt-3">
+       <div class="mr-4">
+           <img src="imgs/signin_icon.png" alt=""/>
+           <a class="show_font" href="#">Sign In</a>
+       </div>
+        <div>
+            <img src="imgs/cart_icon.png" alt=""/>
+            <a class="show_font" href="#">My Cart (0)</a>
+        </div>
+    </div>
+    </div>
+    <div class="nav nav_shadow">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link p-0 home_img" href="#">
+                    <img src="imgs/home_icon.png" alt=""/>
+                </a>
+            </li>
+            <li class="nav-item nav_page">
+                <a class="nav-link text-white" href="#">Pages<img class="ml-2 pr-3 py-1"  src="imgs/menu_arrow.png" alt=""/></a>
+            </li>
+                <ul class="list-unstyled toggle toggle_page">
+                    <li class="p-3"><a class="text-white" href="#">Price Compare Table</a></li>
+                    <li class="p-3"><a class="text-white" href="#">FAQ</a></li>
+                    <li class="p-3"><a class="text-white" href="#">Shopping Cart</a></li>
+                    <li class="p-3"><a class="text-white" href="#">Right Sidebar</a></li>
+                </ul>
+            <li class="nav-item nav_online">
+                <a class="nav-link text-white" href="#">Online Store<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
+            </li>
+            <ul class="list-unstyled toggle toggle_online">
+                <li class="p-3"><a class="text-white" href="#">Product Listing as Grid</a></li>
+                <li class="p-3"><a class="text-white" href="#">Product Listing as List</a></li>
+                <li class="p-3"><a class="text-white" href="#">Product Details</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Blog<span class="pr-3"></span></a>
+            </li>
+            <li class="nav-item nav_short">
+                <a class="nav-link text-white" href="#">Shortcodes<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
+            </li>
+            <ul class="list-unstyled toggle toggle_short">
+                <li class="p-3"><a class="text-white" href="#">Buttons and Links</a></li>
+                <li class="p-3"><a class="text-white" href="#">Columns</a></li>
+                <li class="p-3"><a class="text-white" href="#">Tabs and Accordions</a></li>
+            </ul>
+            <li class="nav-item nav_port">
+                <a class="nav-link text-white" href="#">Portfolio<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
+            </li>
+            <ul class="list-unstyled toggle toggle_port">
+                <li class="p-3"><a class="text-white" href="#">Two Columns Layout</a></li>
+                <li class="p-3"><a class="text-white" href="#">Three Columns Layout</a></li>
+                <li class="p-3"><a class="text-white" href="#">Four Columns Layout</a></li>
+            </ul>
+            <li>
+                <a class="nav-link text-white" href="#">Contacts<span class="pr-3"></span></a>
+            </li>
+            <li class="nav-item nav_mega">
+                <a class="nav-link text-white" href="#">Mega<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
+            </li>
+            <div class="mega_show">
+                <div class="float-left w-50 p-4">
+                    <h3 class="pb-3">What is Mega Menu?</h3>
+                    <div class="content1">Mega menu is a next step of the js based dropdown. It's similar to a normal menu in terms of general behaviour, but enriched with more options, multiple links, complex navigation, form elements like login, search and much more.</div>
+                </div>
+                <div class="float-left w-50 p-4">
+                    <h3 class="pb-3">Example</h3>
+                    <div class="content2">
+                        <form class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your e-mail"/>
+                        </form>
+                        <form class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your name"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="float-left w-50 p-4">
+                    <h3 class="pb-3">Why do I need it?</h3>
+                    <div class="content3">Because you can create much more interesting and complex navigation systems, grouping links, improve the UI, improve the user's workflow while filling forms, signing in etc.</div>
+                </div>
+                <div class="float-left w-50 p-4">
+                    <h3 class="pb-3">Another example</h3>
+                    <div class="content4 d-flex flex-wrap" style="padding-right: 50px">
+                        <div class="p-2 mb-2 mr-2" style="padding-right: 50px;background:#ede6e9">
+                            <img src="imgs/slide_small1.jpg" alt=""/>
+                        </div>
+                        <div class="p-2 mb-2" style="padding-right: 50px;background:#ede6e9">
+                            <img src="imgs/slide_small2.jpg" alt=""/>
+                        </div>
+                        <div class="p-2" style="background:#ede6e9">
+                            <img src="imgs/slide_small3.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Menu<span class="pr-3"></span></a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="nav_bottom d-flex w-100 justify-content-between mt-5">
+        <div class="w-75">
+            <img class="w-100" src="imgs/promo4.jpg" alt=""/>
+        </div>
+        <div class="nav_bottomr w-25 d-flex flex-column">
+            <div class="pl-1">
+            <div class="media p-2 px-3 py-3">
+                <div class="p-1 mr-2 img_container" >
+                <img src="imgs/slide_small1.jpg" alt=""/>
+                </div>
+                <div class="media-body">
+                    <div>
+                        What Is My Color
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pl-1">
+            <div class="media p-2 px-3 py-3">
+                <div class="p-1 mr-2 img_container">
+                <img class="" src="imgs/slide_small2.jpg" alt=""/>
+                </div>
+                <div class="media-body">
+                    <div>
+                        Full Set Of Features
+                    </div>
+                    <div class="content">
+                        Nulla sit amet nunc non nibh faucibus
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pl-1 active2">
+            <div class="media py-3 px-3 active">
+                <div class="img_container p-1 mr-2">
+                    <img src="imgs/slide_small3.jpg" alt=""/>
+                </div>
+                <div class="media-body">
+                    <div>
+                        Dreams In Purple
+                    </div>
+                    <div class="content">
+                        Phasellus elefend, enim non euismod lacinia
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pl-1">
+            <div class="media p-2 px-3 py-3">
+                <div class="p-1 mr-2 img_container">
+                <img  src="imgs/slide_small4.jpg" alt=""/>
+                </div>
+                <div class="media-body">
+                    <div>
+                        Red For Passion
+                    </div>
+                    <div class="content">
+                        Class aptent taciti sociosqu it litora
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="welcome w-100 mt-5 text-white p-2 box_shadow">
+        Welcome to this great and sophisticated e-shop. We have prepared an enormous set of features for you!
+    </div>
+</div>
+<div class="container">
+    <div class="carousel_top"></div>
+    <div class="my_carousel d-flex justify-content-between p-4 bg-white">
+        <div>
+            <div class="name">
+                <a href="#">Great New Perfume for Her</a>
+            </div>
+            <div class="price">
+                $149.90
+            </div>
+            <div>
+                <img src="imgs/product1.png" alt=""/>
+            </div>
+            <div class="d-flex justify-content-between button mt-3">
+                <a class="text-white px-2 py-1" href="">Add to cart</a>
+                <a href="#">view more</a>
+            </div>
+        </div>
+        <div>
+            <div class="name">
+                <a href="#">Great New Perfume for Her</a>
+            </div>
+            <div class="price">
+                $149.90
+            </div>
+            <div>
+                <img src="imgs/product2.png" alt=""/>
+            </div>
+            <div class="d-flex justify-content-between button mt-3">
+                <a class="text-white px-2 py-1" href="">Add to cart</a>
+                <a href="#">view more</a>
+            </div>
+        </div>
+        <div>
+            <div class="name">
+                <a href="#">Great New Perfume for Her</a>
+            </div>
+            <div class="price">
+                $149.90
+            </div>
+            <div>
+                <img src="imgs/product3.png" alt=""/>
+            </div>
+            <div class="d-flex justify-content-between button mt-3">
+                <a class="text-white px-2 py-1" href="">Add to cart</a>
+                <a href="#">view more</a>
+            </div>
+        </div>
+        <div>
+            <div class="name">
+                <a href="#">Great New Perfume for Her</a>
+            </div>
+            <div class="price">
+                $149.90
+            </div>
+            <div class="img">
+                <img src="imgs/product4.png" alt=""/>
+            </div>
+            <div class="d-flex justify-content-between button mt-3">
+                <a class="text-white px-2 py-1" href="">Add to cart</a>
+                <a href="#">view more</a>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="carousel_top mt-5"></div>
+        <div class="d-flex justify-content-between px-2 pt-3 bg-white">
+            <div class="w-50">
+                <h3 class="mb-4">Browse our Gallery</h3>
+                <div class="d-flex justify-content-between flex-wrap" >
+                    <div class="galleryimg_height p-1 mb-2 ">
+                        <img class="w-100 h-100" src="imgs/big01.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height mb-2  p-1">
+                        <img class="w-100 h-100" src="imgs/big02.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height mb-2 p-1">
+                        <img class="w-100 h-100" src="imgs/big03.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height mb-2 p-1">
+                        <img class="w-100 h-100" src="imgs/big04.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height mb-2 p-1">
+                        <img class="w-100 h-100" src="imgs/big05.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height mb-2 p-1">
+                        <img class="w-100 h-100" src="imgs/big06.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height p-1">
+                        <img class="w-100 h-100" src="imgs/big03.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height p-1">
+                        <img class="w-100 h-100" src="imgs/big01.jpg" alt=""/>
+                    </div>
+                    <div class="galleryimg_height p-1">
+                        <img class="w-100 h-100" src="imgs/big04.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50 ml-4">
+                <h3 class="mb-4">Latest News or Blog Posts</h3>
+                <div class="pb-4 h3_bottom">
+                    <div class="d-flex">
+                        <div class="left_title text-center text-white mr-2 mb-3">
+                            <div><a href="#" class="text-white">&nbsp;23&nbsp;</a></div>
+                            <div>FEB</div>
+                        </div>
+                        <div class="title">Lorem ipsum dolor sit amet, consectetur elit. Nulla sit amet nunc non nibh faucibus dictum.</div>
+                    </div>
+                    <div class="content">Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci. Nullam eu sapien ipsum, non adipiscing lacus. Suspendisse tempus purus et diam consequat volutpat. <span><a href="#">View more...</a></span></div>
+                </div>
+                <div class="pt-3">
+                    <div class="d-flex">
+                        <div class="left_title text-center text-white mr-2 mb-3">
+                            <div><a href="#" class="text-white">&nbsp;20&nbsp;</a></div>
+                            <div>FEB</div>
+                        </div>
+                        <div class="title">Lorem ipsum dolor sit amet, consectetur elit. Nulla sit amet nunc non nibh faucibus dictum.</div>
+                    </div>
+                    <div class="content">Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti.<span><a href="#">View more...</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products d-flex justify-content-between mt-5 pb-5">
+        <div class="left mr-5">
+          <h3 class="mb-3">Providing High Quality Products</h3>
+          <div class="pb-3">Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+          <ul class="list-unstyled">
+              <li class="py-1 pl-5">Suspendisse potenti. Fusce sed nisi enim, et tincidunt nunc</li>
+              <li class="py-1 pl-5">Vestibulum sed sapien quam, et iaculis ipsum</li>
+              <li class="py-1 pl-5">Lorem ipsum dolor sit amet, elit.</li>
+              <li class="py-1 pl-5">Phasellus eleifend, enim non esmod lacinia, urna odio convallis urna</li>
+          </ul>
+        </div>
+        <div class="right">
+          <h3 class="mb-3">Many Great Features</h3>
+            <div class="d-flex mb-3">
+                <div>
+                    <img class="mr-3" src="imgs/icon1.png" alt=""/>
+                </div>
+                <div>Lorem ipsum dolor amet, consecteur adipsing elit. Phasellus efend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi non orci. Nullam eu sapien ipsum, non adipiscing lacus.</div>
+            </div>
+            <div class="d-flex mb-3">
+                <div>
+                    <img class="mr-3" src="imgs/icon2.png" alt=""/>
+                </div>
+                <div>Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti.</div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <img class="mr-3" src="imgs/icon3.png" alt=""/>
+                </div>
+                <div>Sed aliquet urna eu diam malesuada egestas nisl faucibus. Vivamus dui libero, pharetra eget vehicula vel, laoreet a arcu. Sed ac mauris massa. Praesent rutrum condimentum dolor.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer_container">
+ <div class="img_container">
+     <img src="imgs/top.png" alt=""/>
+ </div>
+<div class="footer d-flex justify-content-center bg-dark">
+  <div class="footer_width d-flex justify-content-between">
+      <div class="w-30">
+          <div class="title pt-4 pb-3 bottom_line">Quick navigation</div>
+          <ul class="list-unstyled">
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">Customer support 24/7</a>
+              </li>
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">Shipping information</a>
+              </li>
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">Terms and conditions</a>
+              </li>
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">Legal notice</a>
+              </li>
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">Return policy</a>
+              </li>
+              <li class="py-3 pl-3 bottom_line">
+                  <a href="#">FAQ</a>
+              </li>
+          </ul>
+      </div>
+      <div class="w-30">
+          <div class="title pt-4 pb-3">Newsletter</div>
+          <div class="newsletter pb-3">Sign up for our newsletter to receive on a regular basis updates, hot offers, site news etc.</div>
+          <div class="d-flex justify-content-between">
+              <input type="text" placeholder="Enter your e-mail..."/>
+              <button>GO</button>
+          </div>
+      </div>
+      <div class="w-30"">
+          <div class="title pt-4 pb-3">Contact us</div>
+          <div class="pb-3">Paris, France 12009
+              Boulevard de Sevastopol 377, Building A, Office 177</div>
+          <div class="pb-3">More Templates 模板之家</div>
+          <div class="pb-3">Phone: +33 123 456 and +33 456 789<br/>
+              Fax: +33 123 456<br/>
+              Email: <span><a href="#">info@yoursite.com</a></span></div>
+          <div>
+              <img class="mr-2" src="imgs/facebook.png" alt=""/>
+              <img class="mr-2" src="imgs/vimeo.png" alt=""/>
+              <img class="mr-2" src="imgs/youtube.png" alt=""/>
+              <img class="mr-2" src="imgs/twitter.png" alt=""/>
+              <img class="mr-2" src="imgs/google.png" alt=""/>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
