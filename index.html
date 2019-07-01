@@ -15,13 +15,12 @@
 <div class="header bg-dark text-white d-flex justify-content-center">FREE delivery on orders over $100. Add promo code <span>&nbsp;FREEDEV&nbsp;</span> at checkout. Expires 12 March</div>
 <div class="show d-flex flex-column align-items-center">
     <div class="nav_top d-flex justify-content-between pt-3">
-        <div >
-        <img class="w-100" src="imgs/logo.png" alt=""/>
-    </div>
+        <div class="logo">
+        </div>
     <div class="input_container">
-        <input class="pl-1 border-0 show_input" type="text" placeholder="I am looking for...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|"/>
+        <input class="pl-1 w-100 border-0 show_input" type="text" placeholder="I am looking for...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|"/>
     </div>    
-    <div  class="d-flex justify-content-between mt-3">
+    <div class="navtop_right d-flex justify-content-between mt-3">
        <div class="mr-4">
            <img src="imgs/signin_icon.png" alt=""/>
            <a class="show_font" href="#">Sign In</a>
@@ -39,7 +38,8 @@
                     <img src="imgs/home_icon.png" alt=""/>
                 </a>
             </li>
-            <li class="nav-item nav_page">
+            <div class="nav_page">
+            <li class="nav-item">
                 <a class="nav-link text-white" href="#">Pages<img class="ml-2 pr-3 py-1"  src="imgs/menu_arrow.png" alt=""/></a>
             </li>
                 <ul class="list-unstyled toggle toggle_page">
@@ -48,7 +48,9 @@
                     <li class="p-3"><a class="text-white" href="#">Shopping Cart</a></li>
                     <li class="p-3"><a class="text-white" href="#">Right Sidebar</a></li>
                 </ul>
-            <li class="nav-item nav_online">
+            </div>
+            <div class="nav_online">
+            <li class="nav-item">
                 <a class="nav-link text-white" href="#">Online Store<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
             </li>
             <ul class="list-unstyled toggle toggle_online">
@@ -56,10 +58,12 @@
                 <li class="p-3"><a class="text-white" href="#">Product Listing as List</a></li>
                 <li class="p-3"><a class="text-white" href="#">Product Details</a></li>
             </ul>
+            </div>
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Blog<span class="pr-3"></span></a>
             </li>
-            <li class="nav-item nav_short">
+            <div class="nav_short">
+            <li class="nav-item">
                 <a class="nav-link text-white" href="#">Shortcodes<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
             </li>
             <ul class="list-unstyled toggle toggle_short">
@@ -67,7 +71,9 @@
                 <li class="p-3"><a class="text-white" href="#">Columns</a></li>
                 <li class="p-3"><a class="text-white" href="#">Tabs and Accordions</a></li>
             </ul>
-            <li class="nav-item nav_port">
+            </div>
+            <div class="nav_port">
+            <li class="nav-item">
                 <a class="nav-link text-white" href="#">Portfolio<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
             </li>
             <ul class="list-unstyled toggle toggle_port">
@@ -75,10 +81,12 @@
                 <li class="p-3"><a class="text-white" href="#">Three Columns Layout</a></li>
                 <li class="p-3"><a class="text-white" href="#">Four Columns Layout</a></li>
             </ul>
+            </div>
             <li>
                 <a class="nav-link text-white" href="#">Contacts<span class="pr-3"></span></a>
             </li>
-            <li class="nav-item nav_mega">
+            <div class="nav_mega">
+            <li class="nav-item">
                 <a class="nav-link text-white" href="#">Mega<img class="ml-2 pr-3 py-1" src="imgs/menu_arrow.png" alt=""/></a>
             </li>
             <div class="mega_show">
@@ -116,6 +124,7 @@
                     </div>
                 </div>
             </div>
+            </div>
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Menu<span class="pr-3"></span></a>
             </li>
@@ -127,7 +136,7 @@
             <img class="w-100" src="imgs/promo4.jpg" alt=""/>
         </div>
         <div class="nav_bottomr w-25 d-flex flex-column">
-            <div class="pl-1">
+            <div id="media1" class="pl-1">
             <div class="media p-2 px-3 py-3">
                 <div class="p-1 mr-2 img_container" >
                 <img src="imgs/slide_small1.jpg" alt=""/>
@@ -142,7 +151,7 @@
                 </div>
             </div>
             </div>
-            <div class="pl-1">
+            <div id="media2" class="pl-1">
             <div class="media p-2 px-3 py-3">
                 <div class="p-1 mr-2 img_container">
                 <img class="" src="imgs/slide_small2.jpg" alt=""/>
@@ -157,7 +166,7 @@
                 </div>
             </div>
             </div>
-            <div class="pl-1 active2">
+            <div id="media3" class="pl-1 active2">
             <div class="media py-3 px-3 active">
                 <div class="img_container p-1 mr-2">
                     <img src="imgs/slide_small3.jpg" alt=""/>
@@ -172,7 +181,7 @@
                 </div>
             </div>
             </div>
-            <div class="pl-1">
+            <div id="media4" class="pl-1">
             <div class="media p-2 px-3 py-3">
                 <div class="p-1 mr-2 img_container">
                 <img  src="imgs/slide_small4.jpg" alt=""/>
@@ -195,7 +204,7 @@
 </div>
 <div class="container">
     <div class="carousel_top"></div>
-    <div class="my_carousel d-flex justify-content-between p-4 bg-white">
+    <div class="my_carousel d-flex justify-content-around p-4 bg-white">
         <div>
             <div class="name">
                 <a href="#">Great New Perfume for Her</a>
@@ -204,9 +213,9 @@
                 $149.90
             </div>
             <div>
-                <img src="imgs/product1.png" alt=""/>
+                <img class="w-88" src="imgs/product1.png" alt=""/>
             </div>
-            <div class="d-flex justify-content-between button mt-3">
+            <div class="d-flex justify-content-around button mt-3">
                 <a class="text-white px-2 py-1" href="">Add to cart</a>
                 <a href="#">view more</a>
             </div>
@@ -219,9 +228,9 @@
                 $149.90
             </div>
             <div>
-                <img src="imgs/product2.png" alt=""/>
+                <img  class="w-88" src="imgs/product2.png" alt=""/>
             </div>
-            <div class="d-flex justify-content-between button mt-3">
+            <div class="d-flex justify-content-around button mt-3">
                 <a class="text-white px-2 py-1" href="">Add to cart</a>
                 <a href="#">view more</a>
             </div>
@@ -234,9 +243,9 @@
                 $149.90
             </div>
             <div>
-                <img src="imgs/product3.png" alt=""/>
+                <img class="w-88" src="imgs/product3.png" alt=""/>
             </div>
-            <div class="d-flex justify-content-between button mt-3">
+            <div class="d-flex justify-content-around button mt-3">
                 <a class="text-white px-2 py-1" href="">Add to cart</a>
                 <a href="#">view more</a>
             </div>
@@ -249,7 +258,7 @@
                 $149.90
             </div>
             <div class="img">
-                <img src="imgs/product4.png" alt=""/>
+                <img class="w-88" src="imgs/product4.png" alt=""/>
             </div>
             <div class="d-flex justify-content-between button mt-3">
                 <a class="text-white px-2 py-1" href="">Add to cart</a>
@@ -388,7 +397,7 @@
               <button>GO</button>
           </div>
       </div>
-      <div class="w-30"">
+      <div class="w-30">
           <div class="title pt-4 pb-3">Contact us</div>
           <div class="pb-3">Paris, France 12009
               Boulevard de Sevastopol 377, Building A, Office 177</div>
@@ -407,5 +416,6 @@
   </div>
 </div>
 </div>
+<script src="js/index.js"></script>
 </body>
 </html>
