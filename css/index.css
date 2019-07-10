@@ -5,9 +5,9 @@
     .header{
         font-size: 1rem;
     }
-    .show{
-        max-width: 1110px;
-    }
+	.panel{
+		left: 397px;
+	}
 }
 @media (min-width:768px) and (max-width:991px){
     html{
@@ -16,17 +16,17 @@
     .header{
         font-size: 0.5rem;
     }
-    .show{
-        max-width: 690px;
-    }
+	.panel{
+		left: 253px;
+	}
 }
 @media (max-width:767px){
     html{
         font-size: 12px;
     }
-    .show{
-        max-width: 510px;
-    }
+	.panel{
+		left: 180px;
+	}
 }
 body{
     background: url(../imgs/bkg.jpg);
@@ -42,9 +42,7 @@ body{
 }
 
 .show{
-
     height: 44rem;
-    margin: 0 auto;
     background: url(../imgs/floral.png) no-repeat right bottom;
     background-size: 100%;
 }
@@ -261,7 +259,6 @@ body{
     background: rgb(237,230,233);
 }
 .welcome{
-    height: 3.063em;
     border-radius: 0.25rem;
     box-shadow: 0.313rem 0.313rem 0.188rem #450928 inset;
     background: #50062c;
@@ -375,7 +372,6 @@ body{
     top: -1.563rem
 }
 .footer_width{
-    width: 60%;
     height: 25rem;
 }
 .footer_width .title{
@@ -422,9 +418,54 @@ body{
     background: url(../imgs/link_arrow_white.png) no-repeat left center;
 }
 
+/* 轮播图相关 */
+.carousel_container {
+	position: relative;
+	height: 25.25rem;
+	overflow: hidden;
+}
 
-
-
+	.beauty_carousel{
+	 position: absolute;
+	 width: 300%;
+	}
+	.c {
+	  width: 33.33333333%;
+	  height: 500px;
+	  float: left;
+	}
+	.c1{
+	  background: url(../imgs/promo2.jpg) no-repeat;
+	  background-size: 100% 100%;
+	}
+	.c2{
+		background: url(../imgs/promo4.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.c3{
+		background: url(../imgs/promo5.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.panel{
+	  position: absolute;
+	  top: 20px;
+	  width: 65px;
+	  height: 10px;
+	}
+	.panel>div{
+	 float: left;
+	 width: 15px;
+	 height: 15px;
+	 margin-right: 5px;
+	 border-radius: 50%;
+	 background: #fff;
+	}
+	.panel>div:last-child{
+	 margin-right: 0;
+	}
+	.panel .active{
+	   background: #ccc;
+	}
 
 
 

@@ -12,8 +12,8 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="header bg-dark text-white d-flex justify-content-center">FREE delivery on orders over $100. Add promo code <span>&nbsp;FREEDEV&nbsp;</span> at checkout. Expires 12 March</div>
-<div class="show d-flex flex-column align-items-center">
+<div class="header bg-dark text-white text-center">FREE delivery on orders over $100. Add promo code <span>&nbsp;FREEDEV&nbsp;</span> at checkout. Expires 12 March</div>
+<div class="container show d-flex flex-column align-items-center">
     <div class="nav_top d-flex justify-content-between pt-3">
         <div class="logo">
         </div>
@@ -129,11 +129,19 @@
                 <a class="nav-link text-white" href="#">Menu<span class="pr-3"></span></a>
             </li>
         </ul>
-
     </div>
     <div class="nav_bottom d-flex w-100 justify-content-between mt-5">
-        <div class="w-75">
-            <img class="w-100" src="imgs/promo4.jpg" alt=""/>
+        <div class="carousel_container w-75">
+            <div class="beauty_carousel" style="left: 0;">
+                <div class="c c1" onclick="go1()"></div>
+                <div class="c c2" onclick="go2()"></div>
+                <div class="c c3" onclick="go3()"></div>
+              </div>
+              <div class="panel">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>  
         </div>
         <div class="nav_bottomr w-25 d-flex flex-column">
             <div id="media1" class="pl-1">
@@ -365,7 +373,7 @@
      <img src="imgs/top.png" alt=""/>
  </div>
 <div class="footer d-flex justify-content-center bg-dark">
-  <div class="footer_width d-flex justify-content-between">
+  <div class="container footer_width d-flex justify-content-between">
       <div class="w-30">
           <div class="title pt-4 pb-3 bottom_line">Quick navigation</div>
           <ul class="list-unstyled">
@@ -417,5 +425,27 @@
 </div>
 </div>
 <script src="js/index.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+  var container = document.getElementsByClassName("carousel_container")[0];
+  var containerWidth = container.offsetWidth;
+    var carousel1 = new Carousel(containerWidth,3,false);
+    carousel1.init();
+  window.onresize = function () {
+    containerWidth = container.offsetWidth;
+    var carousel2 = new Carousel(containerWidth,3,false);
+    carousel2.init();
+    location.reload();
+  }
+ function go1() {
+   location.href = "https://www.baidu.com";
+ };
+ function go2() {
+    location.href = "http://www.tmooc.cn/";
+  };
+  function go3() {
+    location.href = "http://www.yangliyang.com/";
+  };
+</script>
 </body>
 </html>
